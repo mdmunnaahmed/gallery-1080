@@ -17,7 +17,8 @@
     <!-- Plugin Link -->
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
-
+<link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/datepicker.min.css">
+<link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/jquery-timepicky.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -41,11 +42,58 @@
             <h4 class="page-title page-title-1080 ps-3">Logout</h4>
         </a>
         <h4 class="page-title">Album</h4>
-        <select class="collect-content">
-            <option value="">Collect Content</option>
-            <option value="">Collect Photos</option>
-            <option value="">Collect Videos</option>
-        </select>
+        <div class="position-relative">
+            <a href="javascript:void(0)" class="collect-content text-center">Collect Content <i class="las la-angle-down"></i></a>
+            <div class="search-wrapper-1080">
+                <h3 class="title pb-40">Search</h3>
+                <div class="d-flex flex-wrap align-items-center mb-3">
+                    <img src="./assets/images/icon/location.svg" alt="icon">
+                    <p class="mb-0 ps-3 location-text-1080">Location</p>
+                </div>
+                <select class="w-100 select-location-1080 mb-3">
+                    <option value="">Select location</option>
+                    <option value="">Hong Kong, Islands</option>
+                    <option value="">Hong Kong, Kwai Tsing</option>
+                    <option value="">Hong Kong, Territories</option>
+                </select>
+                <div class="d-flex flex-wrap align-items-center mb-3 mt-1">
+                    <img src="./assets/images/icon/date.svg" alt="icon">
+                    <p class="mb-0 ps-3 location-text-1080">Date</p>
+                </div>
+                <div class="date-wrapper-1080 d-flex flex-wrap">
+                    <div class="date-left">
+                        <button type="button" class="btn cmn--btn d-block w-100 border-r-20">Todays</button>
+                    </div>
+                    <div class="date-right">
+                        <form action="">
+                            <div class="form-group">
+                                <div class="input-group mydate-1080">
+                                    <input type="text" placeholder="Select Date" class="datepicker-here-1080 datepicker-here form-control opacity-75 shadow-none" data-language="en" data-date-format="dd-mm-yyyy" data-position="bottom right">
+                                    <img src="./assets/images/icon/date-icon-1080.svg" alt="calendar" class="ms-3 calendar-click" style="width: 35px;">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap align-items-center mt-3 mb-2">
+                    <img src="./assets/images/icon/clock-1080.svg" alt="icon">
+                    <p class="mb-0 ps-3 location-text-1080">Time</p>
+        
+                </div>
+                <div class="d-flex align-items-center justify-content-between" style="gap: 0 15px">
+                    <div class="d-flex flex-column pe-3">
+                        <span class="form--to">From</span>
+                        <input type="text" id="timePicker" placeholder="Select time" class="form-control form--control">
+                    </div>
+                    <img src="./assets/images/icon/arrow-right.png" alt="arrow" class="mw-100 mt-4">
+                    <div class="d-flex flex-column ps-3">
+                        <span class="form--to">To</span>
+                        <input type="text" id="timePicker2" placeholder="Select time" class="form-control form--control">
+                    </div>
+                </div>
+                <button type="button" class="btn cmn--btn d-block mybtn-radius w-100 h--73-1080 mt--32 search-button-1080">Search</button>
+            </div>
+        </div>
     </div>
     <!-- Header Section -->
 
@@ -137,12 +185,12 @@
                         <!-- Logout Success -->
                         <div class="popup-wrapper logout-modal scan-access-card-1080">
                             <div class="text-center">
-                                <h3 class="mb-4 mb-sm-5 mt-3 title-logout-1080">Scan Access Card for
+                                <h3 class="mb-4 mb-sm-5 mt-3 title-logout-1080">Please Scan Access Card for
                                     <br> Payment
                                 </h3>
                             </div>
-                            <div class="scan-btn-wrapper-1080 d-flex flex-wrap">
-                                <div class="left-1080"><input type="text" class="form-control form--control"></div>
+                            <div class="scan-btn-wrapper-1080 d-flex">
+                                <div class="left-1080 h--50-1080"><input type="text" class="form-control form--control"></div>
                                 <div class="right-1080">
                                     <a href="" data-bs-target="#success-payment-1080" data-bs-toggle="modal" class="cmn--btn btn--lg d-block text-center">Proceed</a>
                                 </div>
@@ -611,7 +659,7 @@
             <div class="modal-content  bg-transparent border-0">
                 <div class="modal-body p-0">
                     <!-- Share Popup -->
-                    <div class="popup-wrapper share-modal">
+                    <div class="popup-wrapper share-modal my-modal-design">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <h6>Share</h6>
                             <p class="mb-0 fs--18px">Selected (<span class="selectedGalleryCount">0</span> / <span class="totalGalleryCount"></span> )</p>
@@ -783,7 +831,7 @@
                             <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
                             <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
                         </div>
-                        <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                        <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4">Confirm</a>
                         <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
                     </div>
                     <!-- Logout Success -->
@@ -890,7 +938,7 @@
                                     <button class="cmn--btn active px-2 d-block w-100 mt-0 mt-sm--2" data-bs-dismiss="modal">Cancel</button>
                                 </div>
                                 <div class="col-sm-6">
-                                    <button class="cmn--btn px-2 d-block w-100" data-bs-target="#uploadThree" data-bs-toggle="modal">Confirm</button>
+                                    <button class="cmn--btn px-2 d-block w-100" data-bs-toggle="modal" data-bs-target="#scan-access-card">Confirm</button>
                                 </div>
                             </div>
                         </div>
@@ -942,6 +990,33 @@
 
     <!-- Main js -->
     <script src="assets/js/main.js"></script>
+    <script src="https://template.themebracket.com/admin/admin/assets/js/vendor/datepicker.min.js"></script>
+    <script src="https://template.themebracket.com/admin/admin/assets/js/vendor/datepicker.en.js"></script>
+    <script src="./assets/js/lib/timepicker.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".datepicker-here").datepicker();
+            $(".calendar-click").on("click", function () {
+                $(this).siblings("input").focus();
+            });
+            $("#timePicker").focus();
+            $("#timePicker2").focus();
+            $(".datepicker").on('click', function () {
+                $(".search-wrapper-1080").css('opacity', '1');
+                $(".search-wrapper-1080").css('visibility', 'visible');
+            })
+            $('.search-button-1080').on('click', function () {
+                location.reload(true);
+            })
+        })
+        // time picker init js code
+        $("#timePicker").timePicky();
+        $("#timePicker2").timePicky();
+        $("#timePicker").focus();
+        $("#timePicker2").focus();
+
+    </script>
 
 </body>
 

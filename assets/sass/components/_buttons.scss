@@ -75,6 +75,10 @@
 	&.active:hover {
 		color: hsl(var(--white));
 		background-color: hsl(var(--accent));
+		border-color: hsl(var(--accent));
+	}
+	&:hover {
+		border-color: hsl(var(--accent));
 	}
 }
 .cmn--btn2 {
@@ -82,6 +86,7 @@
 	border-color: hsl(var(--accent));
 	&:hover {
 		color: hsl(var(--accent));
+		border-color: hsl(var(--accent));
 	}
 }
 
