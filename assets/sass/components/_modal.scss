@@ -1,0 +1,76 @@
+.custom--modal .modal-footer,
+.custom--modal .modal-body,
+.custom--modal .modal-header {
+	border-color: hsl(var(--border)) !important;
+}
+
+.custom--modal .modal-footer .modal-title,
+.custom--modal .modal-header .modal-title {
+	margin: 0;
+	color: hsl(var(--heading));
+}
+
+.custom--modal .modal-footer .btn-close,
+.custom--modal .modal-header .btn-close {
+	background: transparent;
+	font-size: 20px;
+	line-height: 1;
+	color: hsl(var(--danger)) !important;
+}
+
+.fs--24px {
+	font-size: 24px;
+	@include breakpoint (max-xxl) {
+		font-size: 20px;
+	}
+}
+.package-responsive {
+	.padding-y-sm {
+		padding-top: 12px !important;
+		padding-bottom: 12px !important;
+	}
+}
+.modal-dialog, .package-responsive {
+	width: 500px;
+	@include breakpoint (max-lg) {
+		width: 400px;
+	}
+	@include breakpoint (max-sm) {
+		width: 370px;
+	}
+}
+.payment-padding-wrapper {
+	@include breakpoint (max-sm) {
+		padding: 20px 15px !important;
+	}
+}
+.payment-filter {
+	@include breakpoint (max-sm) {
+		margin: -5px;
+		margin-bottom: 20px;
+	}
+	li {
+		@include breakpoint (max-sm){
+			padding: 5px;
+		}
+		a {
+			width: 160px;
+			display: block;
+			@include breakpoint (max-sm) {
+				padding: 0;
+				width: 90px;
+			}
+			.card-item {
+				padding: 20px;
+				@include breakpoint (max-sm) {
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+.success-modal-mobile {
+	@include breakpoint (max-sm) {
+		margin-top: -60px;
+	}
+}

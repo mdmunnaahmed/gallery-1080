@@ -1,0 +1,193 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Site Titlte Here</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+
+
+    <!-- Face Section Starts Here -->
+    <div class="face-section login-section">
+        <div class="login-thumb d-none d-lg-block">
+            <img src="assets/images/thumb/log-reg-bg.png" alt="thumb">
+        </div>
+        <a href="index.html" class="login-logo d-none d-lg-block"><img src="assets/images/thumb/log-reg-logo.png" alt="thumb"></a>
+        <div class="container">
+            <div class="reset-area login-area d-flex justify-content-center align-items-center">
+                <div class="login-wrapper">
+                    <div class="text-wrapper d-none d-lg-block mb-0">
+                        <h3 class="title">Take a Selfie</h3>
+                    </div>
+                    <div class="text-wrapper position-relative d-lg-none mb-0 pt-sm-0">
+                        <h3 class="title mb-1">Take a Selfie</h3>
+                        <a href="#0" class="skip-text">Skip</a>
+                        <p class="text">To ensure you receive your content, we require a front facing selfie</p>
+                    </div>
+                    <div class="face-thumb text-center py-2">
+                        <img src="assets/images/thumb/imgpsh_fullsize_anim(1).gif" alt="thumb">
+                    </div>
+                    <ul class="info-listing">
+                        <li class="d-flex flex-wrap">
+                            <div class="serial">1</div>
+                            <div class="content">
+                                <h5 class="title">Clear Photo</h5>
+                                <p>Make sure your lighting is correct and try not to blurred</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-wrap">
+                            <div class="serial">2</div>
+                            <div class="content">
+                                <h5 class="title">Visible Face</h5>
+                                <p>Take off your mask, glasses and other things that can cover your face</p>
+                            </div>
+                        </li>
+                        <li class="d-flex flex-wrap">
+                            <div class="serial">3</div>
+                            <div class="content">
+                                <h5 class="title">Maximum 4 Selfies</h5>
+                                <p>Add a maximum of 4 selfies for each account</p>
+                            </div>
+                        </li>
+                        <li class="mb-2 mt-2">
+                            <a href="" class="height-58 cmn--btn w-100 text-center btn--lg">Capture</a>
+                        </li>
+                        <li>
+                            <a href="upload-file.html" data-bs-toggle="modal" data-bs-target="#uploadTwo" class="height-58 cmn--btn btn--outline-light w-100 text-center btn--lg d-lg-none">Import from device</a>
+                            <a href="upload-file.html" class="height-58 cmn--btn btn--outline-light w-100 text-center btn--lg d-lg-block d-none">Import from device</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Face Section Ends Here -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="uploadOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <div class="border-dashed2">
+                        <label class="upload-file-wrapper text-center padding-b-15">
+                            <div class="upload-file-thumb mb-4 pb-1 my-file-photo">
+                                <img src="assets/images/thumb/upload-file.png" alt="thumb">
+                            </div>
+                            <div class="content">
+                                <h6 class="title mb-2 d-none d-lg-block">Drag &amp; drop files or <label for="browse">Browse</label></h6>
+                                <h6 class="title mb-2 d-lg-none">Import your selfie <label for="browse">Here</label></h6>
+                                <p class="fs--13px mb-2 mb-sm-0">Supported formates: JPEG, PNG</p>
+                            </div>
+                            <input type="file" class="d-none input-file-upload" id="browse">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="uploadThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <!-- Upload-file Section Starts Here -->
+                    <div class="finish-area finish-area-bg">
+                        <div class="finish-wrapper">
+                            <div class="thumb">
+                                <img src="assets/images/thumb/ok.gif" alt="thumb">
+                            </div>
+                            <a href="" data-bs-dismiss="modal" class="cmn--btn d-block text-center">Finish</a>
+                        </div>
+                    </div>
+                    <!-- Upload-file Section Ends Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="uploadTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content  bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <div class="reset-area login-area d-flex justify-content-center align-items-center px-3 px-sm-0">
+                        <div class="file-up-wrapper">
+                            <div class="close-tab modal-close" data-bs-dismiss="modal"><i class="las la-times"></i></div>
+                            <label class="upload-file-wrapper text-center">
+                                <div class="upload-file-thumb mb-4 pb-1">
+                                    <img src="assets/images/thumb/upload-file.png" alt="thumb">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title mb-2">Import your selfie <label for="browse">Here</label></h6>
+                                    <p class="fs--13px mb-0">Supported formates: JPEG, PNG</p>
+                                </div>
+                                <input type="file" class="d-none input-file-upload" id="browse">
+                            </label>
+                            <div class="uploadfile-wrapper mt-3">
+                                <p class="mb-1">Uploading - 3/3 files</p>
+                                <div class="upload-content d-flex justify-content-between">
+                                    <span class="d-block fs--13px text-body">your-file-here.JPEG</span>
+                                    <a href="#0" class="remove-btn"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <div class="upload-content d-flex justify-content-between">
+                                    <span class="d-block fs--13px text-body">your-file-here.JPEG</span>
+                                    <a href="#0" class="remove-btn"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <div class="upload-content d-flex justify-content-between">
+                                    <span class="d-block fs--13px text-body">your-file-here.JPEG</span>
+                                    <a href="#0" class="remove-btn"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                            </div>
+                            <ul class="info-listing pt-35">
+                                <li>
+                                    <a href="#0" data-bs-target="#uploadThree" data-bs-toggle="modal" class="cmn--btn style-two w-100 text-center btn--lg">Upload</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 js -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+
+    <!-- Pluglin Link -->
+    <script src="assets/js/lib/slick.min.js"></script>
+    <script src="assets/js/lib/magnific-popup.min.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

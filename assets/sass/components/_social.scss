@@ -1,0 +1,40 @@
+.social-links {
+	li {
+		a {
+			width: 80px;
+			height: 80px;
+            @extend %flex-center;
+            cursor: pointer;
+            border: 2px solid #4147D5;
+            font-size: 28px;
+            border-radius: 50%;
+            color: hsl(var(--base));
+            @include breakpoint(max-xxl) {
+                width: 60px;
+                height: 60px;
+                font-size: 25px;
+                border-width: 2px;
+            }
+            @include breakpoint(max-sm) {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+		}
+        &:nth-child(2) {
+            a {
+                background: conic-gradient(from 180deg at 50% 50%, #33A0FF -65.98deg, rgba(163, 145, 55, 0.6) 137.35deg, #33A0FF 294.02deg, rgba(163, 145, 55, 0.6) 497.35deg);
+               -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+            }
+        }
+        &:nth-child(3) {
+            a {
+                color:#4147D5;
+            }
+        }
+	}
+}

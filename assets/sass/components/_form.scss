@@ -1,0 +1,163 @@
+.label {
+	font-size: 18px;
+	color: hsl(var(--heading));
+	font-weight: 500;
+	margin-bottom: 3px;
+	@include max(1500px) {
+		@include breakpoint(xxl) {
+			font-size: 17px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		font-size: 16px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 15px;
+	}
+}
+.form--control {
+	height: 60px;
+	border-radius: 10px;
+	border: none;
+	outline: 0 !important;
+	box-shadow: none !important;
+	background-color: #f5f5f5;
+	font-size: 18px;
+	padding-inline: 25px;
+	@include max(1500px) {
+		@include breakpoint(xxl) {
+			height: 55px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding-inline: 20px;
+	}
+	@include breakpoint(max-xxl) {
+		font-size: 16px;
+		height: 50px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 14px;
+		height: 48px;
+	}
+	&::placeholder {
+		color: #bfbfbf;
+	}
+	&:focus {
+		background-color: #f5f5f5;
+	}
+}
+textarea.form--control {
+	height: 130px;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-text-fill-color: hsl(var(--heading));
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+.custom--radio {
+	position: relative;
+	padding-left: 0;
+	input[type="radio"] {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		cursor: pointer;
+		&:checked {
+			~ label {
+				&::before {
+					border-width: 2px;
+					border-color: hsl(var(--base)) !important;
+				}
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		margin-bottom: 0;
+		position: relative;
+		padding-left: 20px;
+		font-size: 14px;
+		font-weight: 400;
+		&::before {
+			position: absolute;
+			content: "";
+			top: 4px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			border: 1px solid #888888;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			top: 8px;
+			left: 4px;
+			width: 7px;
+			height: 7px;
+			background-color: hsl(var(--base)) !important;
+			opacity: 0;
+		}
+	}
+}
+.custom--checkbox {
+	padding-left: 25px;
+	input {
+		display: none;
+		&:checked {
+			~ label {
+				&::before {
+					content: "\f14a";
+					color: hsl(var(--base));
+				}
+			}
+		}
+	}
+	label {
+		position: relative;
+		font-size: 15px;
+		font-weight: 400;
+		cursor: pointer;
+		margin-bottom: 0;
+		&::before {
+			position: absolute;
+			content: "\f04d";
+			font-family: "Line Awesome Free";
+			font-weight: 900;
+			top: 3px;
+			left: -25px;
+			font-size: 20px;
+			line-height: 1;
+			@extend %transition;
+		}
+	}
+}
+/* form css end*/
+.custom-icon-field {
+	position: relative;
+}
+.custom-icon-field .form--control,
+.custom-icon-field .select {
+	padding-left: 40px;
+}
+.custom-icon-field > i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 38px;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	color: #c4c4c4;
+}

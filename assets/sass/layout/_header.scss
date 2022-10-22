@@ -1,0 +1,18 @@
+.logo {
+	img {
+		max-width: 180px;
+	}
+}
+.responsive-header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 110;
+	padding: 15px 40px;
+	border-bottom: 1px solid hsl(var(--border));
+	box-shadow: 0 2px 5px hsl(var(--dark)/.1);
+	// margin-bottom: 25px;
+	@include breakpoint(max-md) {
+		padding: 15px 25px;
+	}
+}

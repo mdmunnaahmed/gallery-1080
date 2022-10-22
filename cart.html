@@ -1,0 +1,728 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Site Titlte Here</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+    <!-- Header Section -->
+    <div class="responsive-header d-flex justify-content-between align-items-center bg-white d-lg-none">
+        <div class="header-trigger"><img src="assets/images/icon/toggler.svg" alt="trigger" class="mw-100"></div>
+        <h4 class="page-title">Cart</h4>
+        <a href="qr.html">
+            <img src="assets/images/icon/qr-code-scan.png" alt="icon">
+        </a>
+    </div>
+    <!-- Header Section -->
+
+
+    <!-- Cart Section Starts Here -->
+    <div class="cart-section">
+        <div class="main-wrapper d-flex flex-wrap">
+            <img src="./assets/images/icon/toggler2.svg" alt="toggler" class="sidebar-toggler-icon d-none d-lg-block">
+            <div class="menu-sidebar  menu-icon-text-show">
+                <div class="logo menu-icon-text"><img src="assets/images/logo.svg" alt="logo"></div>
+                <div class="logo menu-icon px-3"><img src="assets/images/short-logo.svg" alt="logo"></div>
+                <ul class="menu">
+                    <li>
+                        <a class="menu-icon-text" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"> Album</a>
+                        <a class="menu-icon" href="index.html"><img src="assets/images/icon/gallery.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a class="menu-icon-text" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"> Profile</a>
+                        <a class="menu-icon" href="profile.html"><img src="assets/images/icon/profile.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a class="menu-icon-text" href="package.html"><img src="assets/images/icon/package.png" alt="icon"> Package</a>
+                        <a class="menu-icon" href="package.html"><img src="assets/images/icon/package.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a class="menu-icon-text" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"> My QR</a>
+                        <a class="menu-icon" href="qr.html"><img src="assets/images/icon/qr.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a class="menu-icon-text" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"> Shop</a>
+                        <a class="menu-icon" href="shop.html"><img src="assets/images/icon/shop.png" alt="icon"></a>
+                    </li>
+
+                    <li>
+                        <a class="menu-icon-text" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"> Cart</a>
+                        <a class="menu-icon" href="cart.html"><img src="assets/images/icon/cart.png" alt="icon"></a>
+                    </li>
+                    <li class="menu-li-shape">
+                        <img src="assets/images/shape/menu-middle-shape.svg" alt="shape" class="menu-middle-shape w-auto h-auto">
+                    </li>
+                </ul>
+                <ul class="menu mt-auto menu-icon-show">
+                    <li>
+                        <a class="menu-icon-text" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"> FAQs</a>
+                        <a class="menu-icon" href="faq.html"><img src="assets/images/icon/faq.png" alt="icon"></a>
+                    </li>
+
+                    <li>
+                        <a class="menu-icon-text" href="terms-conditions.html"><img src="assets/images/icon/t&c.png" alt="icon"> T&C’s</a>
+                        <a class="menu-icon" href="terms-conditions.html"><img src="assets/images/icon/t&c.png" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a class="logout-btn menu-icon-text" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
+                        <a class="logout-btn menu-icon" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"></a>
+                    </li>
+                </ul>
+
+                <div class="mt-auto">
+                    <img src="assets/images/shape/menu-bottom-shape.svg" alt="shape" class="menu-bottom-shape w-auto h-auto">
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0">
+                            <!-- Logout Success -->
+                            <div class="popup-wrapper logout-modal">
+                                <div class="text-center">
+                                    <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                                    <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                                </div>
+                                <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                                <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                            </div>
+                            <!-- Logout Success -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content">
+                <div class="top-area">
+                    <div class="search-box d-flex flex-wrap align-items-center d-none d-lg-block">
+                        <h3 class="title w-100">Cart</h3>
+                    </div>
+                </div>
+                <div class="table-wrapper d-none d-md-block">
+                    <table class="table cart-table shadow-none table--responsive--md">
+                        <thead>
+                            <tr>
+                                <th class="text-start">PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QTY</th>
+                                <th>UNIT PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Product">
+                                    <div class="d-flex flex-wrap align-items-center gap-2 gap-lg-3">
+                                        <div class="thumb">
+                                            <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                                        </div>
+                                        <h4 class="title">My Smiles</h4>
+                                    </div>
+                                </td>
+                                <td data-label="Price"><a href="#0">$20.45</a></td>
+                                <td data-label="Qty">
+                                    <div class="cart-right cart-control-bg">
+                                        <form action="#" class="d-flex align-items-center justify-content-center">
+                                            <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                            <input type="text" value="1" class="product-number text-center">
+                                            <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                                        </form>
+                                    </div>
+                                </td>
+                                <td data-label="Total Price"><a href="#0">$20.45</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Product">
+                                    <div class="d-flex flex-wrap align-items-center gap-2 gap-lg-3">
+                                        <div class="thumb">
+                                            <img src="assets/images/thumb/product2.png" alt="thumb">
+                                        </div>
+                                        <h4 class="title">Hardcover Folder</h4>
+                                    </div>
+                                </td>
+                                <td data-label="Price"><a href="#0">$140.00</a></td>
+                                <td data-label="Qty">
+                                    <div class="cart-right cart-control-bg">
+                                        <form action="#" class="d-flex align-items-center justify-content-center">
+                                            <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                            <input type="text" value="1" class="product-number text-center">
+                                            <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                                        </form>
+                                    </div>
+                                </td>
+                                <td data-label="Total Price"><a href="#0">$240.45</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart-bottom mt-5">
+                        <div class="row justify-content-between gy-5">
+                            <div class="col-md-6 col-xl-4">
+                                <form class="voucher-form">
+                                    <div class="from-group">
+                                        <input type="text" placeholder="Voucher code" class="form-control form--control">
+                                    </div>
+                                    <button type="submit" class="btn cmn--btn">Redeem</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="checkout-box">
+                                    <ul class="checkout-list">
+                                        <li class="d-flex flex-wrap justify-content-between">
+                                            <span class="subtotal">Subtotal</span>
+                                            <span>$160.45</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap justify-content-between">
+                                            <span class="coupon">Coupon</span>
+                                            <span>0.00</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap justify-content-between py-3">
+                                            <span>TOTAL</span>
+                                            <span>$46.44</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#0" class="cmn--btn btn--lg d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Check out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none mt-4">
+                    <div class="mobile-table-wrapper">
+                        <div class="mobile-item d-flex flex-wrap justify-content-between">
+                            <div class="content-wrapper d-flex flex-wrap align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb/mobile1.png" alt="thumb">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title fs--16px text--accent">My smiles</h6>
+                                    <p class="fs--14px fw-bold d-block mb-0 text--base">$20.45</p>
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="cart-right cart-control-bg">
+                                    <form action="#" class="d-flex align-items-center justify-content-center">
+                                        <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                        <input type="text" value="1" class="product-number text-center mx-2">
+                                        <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="delete-thumb">
+                                <img src="assets/images/icon/delete.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="mobile-item d-flex flex-wrap justify-content-between">
+                            <div class="content-wrapper d-flex flex-wrap align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb/mobile2.png" alt="thumb">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title fs--16px text--accent">Happy Family</h6>
+                                    <p class="fs--14px fw-bold d-block mb-0 text--base">$25.99</p>
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="cart-right cart-control-bg">
+                                    <form action="#" class="d-flex align-items-center justify-content-center">
+                                        <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                        <input type="text" value="2" class="product-number text-center mx-2">
+                                        <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="delete-thumb2">
+                                <img src="assets/images/icon/delete.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="mobile-item d-flex flex-wrap justify-content-between">
+                            <div class="content-wrapper d-flex flex-wrap align-items-center">
+                                <div class="thumb">
+                                    <img src="assets/images/thumb/mobile3.png" alt="thumb">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title fs--16px text--accent">Luxury</h6>
+                                    <p class="fs--14px fw-bold d-block mb-0 text--base">$35.22</p>
+                                </div>
+                            </div>
+                            <div class="content-right">
+                                <div class="cart-right cart-control-bg">
+                                    <form action="#" class="d-flex align-items-center justify-content-center">
+                                        <span class="minus-plus cart-minus"><i class="fas fa-minus"></i></span>
+                                        <input type="text" value="1" class="product-number text-center mx-2">
+                                        <span class="minus-plus cart-plus"><i class="fas fa-plus"></i></span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="delete-thumb3">
+                                <img src="assets/images/icon/delete.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-bottom">
+                        <p class="pb-2 pt-4 fs--14px text-center" style="font-weight: 500; font-size: 12px; font-family: 'Poppins';">Shop for more</p>
+                        <div class="row justify-content-between gy-5">
+                            <div class="col-md-6 col-xl-4">
+                                <form class="voucher-form">
+                                    <div class="from-group">
+                                        <input type="text" placeholder="Enter Coupon Code" class="form-control form--control">
+                                    </div>
+                                    <button type="submit" class="btn cmn--btn">Apply</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="checkout-box">
+                                    <ul class="checkout-list">
+                                        <li class="d-flex flex-wrap justify-content-between">
+                                            <span style="color: #9098B1;">Items (4)</span>
+                                            <span>$107.65</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap justify-content-between">
+                                            <span style="color: #9098B1;">Discount</span>
+                                            <span>0,00</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap justify-content-between py-3">
+                                            <span>Total Price</span>
+                                            <span class="right-text">$107.65</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#0" class="cmn--btn d-block text-center" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Pay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Section Ends Here -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Gallery Popup -->
+                        <div class="popup-wrapper">
+                            <div class="gallery-item style--two ">
+                                <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                                <button data-bs-toggle="modal" data-bs-target="#successModal" class="cmn--btn d-block w-100 mt-sm-4">Download</button>
+                                <button data-bs-toggle="modal" data-bs-target="#shareModalOne" class="cmn--btn d-block w-100 active">Share</button>
+                            </div>
+                        </div>
+                        <!-- Gallery Popup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="shareModalOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content  bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Share Popup -->
+                        <div class="popup-wrapper share-modal">
+                            <p class="text-center fs--24px text--heading">Share in you social networks</p>
+                            <ul class="social-links d-flex flex-wrap gap-3 justify-content-center">
+                                <li><a href="javascript:void(0)"><i class="fas fa-copy"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Share Popup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="shareModalTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content  bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Share Popup -->
+                        <div class="popup-wrapper share-modal">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6>Share</h6>
+                                <p class="mb-0">Selected (<span class="selectedGalleryCount">0</span> / <span class="totalGalleryCount"></span> )</p>
+                            </div>
+                            <div class="row g-3 gallery-item-count">
+                                <div class="col-6">
+                                    <div class="gallery-item">
+                                        <div class="form-group select-item position-relative">
+                                            <input type="checkbox" id="check01">
+                                            <label for="check01">
+                                                <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-item">
+                                        <div class="form-group select-item position-relative">
+                                            <input type="checkbox" id="check02">
+                                            <label for="check02">
+                                                <img src="assets/images/thumb/gallery2.png" alt="thumb">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-6">
+                                    <div class="gallery-item">
+                                        <div class="form-group select-item position-relative">
+                                            <input type="checkbox" id="check03">
+                                            <label for="check03">
+                                                <img src="assets/images/thumb/gallery3.png" alt="thumb">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-item">
+                                        <div class="form-group select-item position-relative">
+                                            <input type="checkbox" id="check04">
+                                            <label for="check04">
+                                                <img src="assets/images/thumb/gallery4.png" alt="thumb">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap mt-3 mt-sm-4 gap-2">
+                                <button class="cmn--btn btn--md active flex-grow-1" data-bs-dismiss="modal">Cancel</button>
+                                <button class="cmn--btn btn--md flex-grow-1">Share</button>
+                            </div>
+                        </div>
+                        <!-- Share Popup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="shareModalThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content  bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Share Popup -->
+                        <div class="popup-wrapper share-modal">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6>Share</h6>
+                                <p class="mb-0">Selected (0 / 4)</p>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="gallery-item video-item">
+                                        <div class="form-group select-item position-relative">
+                                            <div class="bg-overlay">
+                                                <input type="checkbox" id="check05">
+                                                <label for="check05">
+                                                    <img src="assets/images/thumb/video1.png" alt="thumb">
+                                                    <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                        <i class="fas fa-play"></i>
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-item video-item">
+                                        <div class="form-group select-item position-relative">
+                                            <div class="bg-overlay">
+                                                <input type="checkbox" id="check06">
+                                                <label for="check06">
+                                                    <img src="assets/images/thumb/video2.png" alt="thumb">
+                                                    <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                        <i class="fas fa-play"></i>
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-item video-item">
+                                        <div class="form-group select-item position-relative">
+                                            <div class="bg-overlay">
+                                                <input type="checkbox" id="check07">
+                                                <label for="check07">
+                                                    <img src="assets/images/thumb/video3.png" alt="thumb">
+                                                    <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                        <i class="fas fa-play"></i>
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="gallery-item video-item">
+                                        <div class="form-group select-item position-relative">
+                                            <div class="bg-overlay">
+                                                <input type="checkbox" id="check08">
+                                                <label for="check08">
+                                                    <img src="assets/images/thumb/video4.png" alt="thumb">
+                                                    <a href="#0" class="create-video text-center video-icon style--two" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                                        <i class="fas fa-play"></i>
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap mt-3 mt-sm-4 gap-2">
+                                <button class="cmn--btn btn--md active flex-grow-1" data-bs-dismiss="modal">Cancel</button>
+                                <button class="cmn--btn btn--md flex-grow-1">Share</button>
+                            </div>
+                        </div>
+                        <!-- Share Popup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Share Success -->
+                        <div class="popup-wrapper success-modal">
+                            <div class="success-modal-mobile d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
+                                <img src="assets/images/icon/success.png" alt="icon">
+                                <p class="text-center text--heading download-text">Download Succeeded !</p>
+                                <button type="button" class="btn cmn--btn d-block mt-4 w-100" data-bs-dismiss="modal">Back</button>
+                            </div>
+                        </div>
+                        <!-- Share Success -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Logout Success -->
+                        <div class="popup-wrapper logout-modal">
+                            <div class="text-center">
+                                <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                                <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                            </div>
+                            <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                            <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                        </div>
+                        <!-- Logout Success -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Logout Success -->
+
+        <div class="modal fade" id="package-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <div class="package-modal">
+                            <div class="package-item style--two package-responsive w-100">
+                                <div class="package-item__thumb">
+                                    <img src="assets/images/thumb/gallery1.png" alt="thumb">
+                                    <span class="base text-white">Unlimited</span>
+                                </div>
+                                <div class="package-item__content">
+                                    <h4 class="title mb-3">My Smiles</h4>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Choose the Date</label>
+                                            <input type="date" class="form-control form--control">
+                                        </div>
+                                    </form>
+                                    <h4 class="text--three mt-4">$18,88</h4>
+                                    <a href="javascript:void(0)" class="cmn--btn mt-3 d-block text-center padding-y-sm" data-bs-target="#popup-wrapper" data-bs-toggle="modal">Buy Now</a>
+                                    <a href="#0" class="cmn--btn  mt-3 d-block text-center btn--outline-light padding-y-sm">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Logout Success -->
+
+        <!-- Payment Modal -->
+
+        <div class="modal fade" id="popup-wrapper" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <div class="popup-wrapper share-modal payment-padding-wrapper" style="overflow-y: auto; height: 100%;">
+                            <div class="payment-wrapper">
+                                <ul class="nav payment-filter">
+                                    <li class="nav-item"><a href="" data-bs-toggle="tab" class="nav-link active">
+                                            <div class="card-item">
+                                                <div class="icon"><img src="assets/images/icon/card1.png" alt="icon"></div>
+                                                <h6 class="mt-2">Card</h6>
+                                            </div>
+                                        </a></li>
+                                    <li class="nav-item"><a href="" data-bs-toggle="tab" class="nav-link">
+                                            <div class="card-item">
+                                                <div class="icon"><img src="assets/images/icon/card2.png" alt="icon"></div>
+                                                <h6 class="mt-2">EPS</h6>
+                                            </div>
+                                        </a></li>
+                                    <li class="nav-item"><a href="" data-bs-toggle="tab" class="nav-link">
+                                            <div class="card-item">
+                                                <div class="icon"><img src="assets/images/icon/card3.png" alt="icon"></div>
+                                                <h6 class="mt-2">Giropay</h6>
+                                            </div>
+                                        </a></li>
+                                </ul>
+                                <div class="row gx-3 gy-2 gy-sm-3">
+                                    <div class="col-12">
+                                        <div class="form-group position-relative">
+                                            <label for="" class="form-label">Card Number</label>
+                                            <input type="text" class="form-control form--control" placeholder="1234 1234 1234 1234">
+                                            <img src="assets/images/icon/payment-list.png" alt="icon" class="payment-list">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Expiry</label>
+                                            <input type="text" class="form-control form--control" placeholder="MM/YY">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">CVC</label>
+                                            <input type="text" class="form-control form--control" placeholder="CVC">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Expiry</label>
+                                            <select class="form-select form--control">
+                                                <option value="">Hong Kong</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control form--control" placeholder="12345">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 order-last">
+                                        <button class="cmn--btn active px-2 d-block w-100 mt-0 mt-sm--2" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button class="cmn--btn px-2 d-block w-100" data-bs-target="#uploadThree" data-bs-toggle="modal">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Payment Modal -->
+
+        <!-- modal  -->
+        <div class="modal fade" id="uploadThree" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content  bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <div class="reset-area wait-sec-wrapper login-area d-flex justify-content-center align-items-center">
+                            <div class="wait-sec">
+                                <div class="animated-ball-wrapper text-center">
+                                    <span class="animate-ball ball-one"></span>
+                                    <span class="animate-ball ball-two"></span>
+                                </div>
+                                <div class="text-bottom-wrapper text-center mb-4">
+                                    <h4 class="title mb-2">Wait a sec</h4>
+                                    <p class="text">Please wait while importing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Gallery Video-->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-body p-0">
+                        <!-- Gallery Popup -->
+                        <div class="popup-wrapper">
+                            <div class="gallery-item style--two ">
+                                <div class="gallery-item video-item">
+                                    <div class="bg-overlay">
+                                        <img src="assets/images/thumb/video1.png" alt="thumb">
+                                        <a href="#0" class="create-video text-center video-icon style--two">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button data-bs-toggle="modal" data-bs-target="#successModal" class="cmn--btn d-block w-100 mt-sm-4">Download</button>
+                                <button data-bs-toggle="modal" data-bs-target="#shareModalOne" class="cmn--btn d-block w-100 active">Share</button>
+                            </div>
+                        </div>
+                        <!-- Gallery Popup -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery library -->
+        <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap 5 js -->
+        <script src="assets/js/lib/bootstrap.min.js"></script>
+
+        <!-- Pluglin Link -->
+        <script src="assets/js/lib/slick.min.js"></script>
+        <script src="assets/js/lib/magnific-popup.min.js"></script>
+
+        <!-- Main js -->
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

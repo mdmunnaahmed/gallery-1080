@@ -1,0 +1,78 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+@font-face {
+	font-family: "JungleFever";
+	font-style: normal;
+	font-weight: 400;
+	src: url(JungleFever-webfont.ttf);
+}
+
+:root {
+	// Fonts
+	--heading-font: "Gotham", sans-serif;
+	--body-font: "Gotham", sans-serif;
+	--other-font: "Poppins", sans-serif;
+
+	//Colors
+	--heading: 0 0% 0%;
+	--body: 0 0% 52%;
+	--border: 196 15% 86%;
+
+	// Base Color Shade
+	--base-h: 208;
+	--base-s: 100%;
+	--base-l: 60%;
+	--base: var(--base-h) var(--base-s) var(--base-l);
+	--base-two: 176 100% 46%;
+	--base-three: 208 100% 60%;
+
+	--base-100: var(--base-h) var(--base-s) calc(var(--base-l) + 20%);
+	--base-200: var(--base-h) var(--base-s) calc(var(--base-l) + 15%);
+	--base-300: var(--base-h) var(--base-s) calc(var(--base-l) + 10%);
+	--base-400: var(--base-h) var(--base-s) calc(var(--base-l) + 5%);
+	--base-500: var(--base-h) var(--base-s) calc(var(--base-l) - 5%);
+	--base-600: var(--base-h) var(--base-s) calc(var(--base-l) - 8%);
+	--base-700: var(--base-h) var(--base-s) calc(var(--base-l) - 10%);
+	--base-800: var(--base-h) var(--base-s) calc(var(--base-l) - 15%);
+	--base-900: var(--base-h) var(--base-s) calc(var(--base-l) - 20%);
+
+	// Accent Color Shade
+	--accent-h: 215;
+	--accent-s: 68%;
+	--accent-l: 28%;
+	--accent-50: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 25%);
+	--accent-100: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 20%);
+	--accent-200: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 15%);
+	--accent-300: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 10%);
+	--accent-400: var(--accent-h) var(--accent-s) calc(var(--accent-l) + 5%);
+	--accent: var(--accent-h) var(--accent-s) var(--accent-l);
+	--accent-600: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 5%);
+	--accent-700: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 10%);
+	--accent-800: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 15%);
+	--accent-900: var(--accent-h) var(--accent-s) calc(var(--accent-l) - 20%);
+
+	--primary: 0 100% 60%;
+	--secondary: 210 7% 56%;
+	--success: 147 67% 47%;
+	--danger: 360 78% 62%;
+	--warning: 29 100% 63%;
+	--info: 200 90% 53%;
+	--dark: 206 70% 11%;
+	--white: 0 0% 100%;
+
+	// Light Color Shade
+	--light-h: 148;
+	--light-s: 0%;
+	--light-l: 95%;
+	--light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
+	--light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);
+	--light-200: var(--light-h) var(--light-s) calc(var(--light-l) + 15%);
+	--light-300: var(--light-h) var(--light-s) calc(var(--light-l) + 10%);
+	--light-400: var(--light-h) var(--light-s) calc(var(--light-l) + 2%);
+	--light: var(--light-h) var(--light-s) var(--light-l);
+	--light-600: var(--light-h) var(--light-s) calc(var(--light-l) - 2%);
+	--light-700: var(--light-h) var(--light-s) calc(var(--light-l) - 10%);
+	--light-800: var(--light-h) var(--light-s) calc(var(--light-l) - 15%);
+	--light-900: var(--light-h) var(--light-s) calc(var(--light-l) - 20%);
+}

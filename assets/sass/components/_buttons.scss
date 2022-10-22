@@ -1,0 +1,134 @@
+.btn,
+.cmn--btn {
+	padding: 12px 55px;
+	font-weight: 500;
+	outline: none !important;
+	box-shadow: none !important;
+	@extend %transition;
+	border-radius: 10px;
+	font-size: 20px;
+	@include max(1500px) {
+		@include breakpoint(xxl) {
+			font-size: 18px;
+			padding: 12px 55px;
+		}
+	}
+	@include max(1600px) {
+		font-size: 17px;
+	}
+	&.btn--lg {
+		@include breakpoint(max-xxl) {
+			font-size: 16px;
+			font-weight: 500;
+			padding: 10px 65px;
+		}
+	}
+	&.btn--md {
+		padding: 10px 25px !important;
+		font-size: 15px;
+	}
+	&.btn--sm {
+		padding: 5px 15px !important;
+		font-size: 14px;
+	}
+	&.btn--xs {
+		padding: 0px 10px !important;
+		font-size: 13px;
+	}
+}
+.cmn--btn {
+	color: hsl(var(--white));
+	overflow: hidden;
+	border: 1px solid hsl(var(--base));
+	@include breakpoint(max-xxl) {
+		padding: 10px 50px;
+		font-size: 18px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 16px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 8px 30px;
+	}
+	&.login-btn {
+		background-color: #d3d3d3;
+		color: #949494;
+		border-color: #d3d3d3;
+		&:hover {
+			background-color: hsl(var(--accent));
+			border-color: hsl(var(--accent));
+			color: hsl(var(--white));
+		}
+	}
+}
+
+.cmn--btn {
+	background-color: hsl(var(--accent));
+	border-color: hsl(var(--accent));
+	&:hover,
+	&.active {
+		background: transparent;
+		color: hsl(var(--accent));
+	}
+	&.active:hover {
+		color: hsl(var(--white));
+		background-color: hsl(var(--accent));
+	}
+}
+.cmn--btn2 {
+	background-color: hsl(var(--accent));
+	border-color: hsl(var(--accent));
+	&:hover {
+		color: hsl(var(--accent));
+	}
+}
+
+$colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "success" hsl(var(--success)), "danger" hsl(var(--danger)), "warning" hsl(var(--warning)), "info" var(--info), "light" hsl(var(--light)), "dark" hsl(var(--dark)), "base" hsl(var(--base));
+
+@each $name, $color in $colors {
+	.btn--#{$name} {
+		background-color: $color;
+		border: 1px solid $color;
+		color: hsl(var(--white));
+		&:hover {
+			color: $color;
+		}
+	}
+}
+.btn--light {
+	color: hsl(var(--base));
+}
+
+@each $name, $color in $colors {
+	.btn--outline-#{$name} {
+		background-color: transparent;
+		border: 1px solid $color;
+		color: $color;
+		&:hover {
+			color: hsl(var(--white));
+			border-color: $color;
+			background-color: $color;
+		}
+	}
+}
+.btn--outline-light {
+	color: hsl(var(--accent));
+	border: 1px solid hsl(var(--accent));
+	&:hover {
+		background-color: hsl(var(--accent));
+	}
+}
+.cmn--btn {
+	&.style-two {
+		background-color: #d3d3d3;
+		color: #949494;
+		border-color: #d3d3d3;
+		&:hover {
+			background: hsl(var(--accent));
+			color: hsl(var(--white));
+			border-color: hsl(var(--white));
+		}
+	}
+}
