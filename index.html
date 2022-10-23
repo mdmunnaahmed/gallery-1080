@@ -17,8 +17,8 @@
     <!-- Plugin Link -->
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
-<link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/datepicker.min.css">
-<link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/jquery-timepicky.css">
+    <link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/datepicker.min.css">
+    <link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/jquery-timepicky.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -78,7 +78,7 @@
                 <div class="d-flex flex-wrap align-items-center mt-3 mb-2">
                     <img src="./assets/images/icon/clock-1080.svg" alt="icon">
                     <p class="mb-0 ps-3 location-text-1080">Time</p>
-        
+
                 </div>
                 <div class="d-flex align-items-center justify-content-between" style="gap: 0 15px">
                     <div class="d-flex flex-column pe-3">
@@ -149,8 +149,8 @@
                     <a class="menu-icon" href="terms-conditions.html"><img src="assets/images/icon/t&c.png" alt="icon"></a>
                 </li>
                 <li>
-                    <a class="logout-btn menu-icon-text" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
-                    <a class="logout-btn menu-icon" href="javascript:void(0)" data-bs-target="#confirmModal" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"></a>
+                    <a class="logout-btn menu-icon-text" href="javascript:void(0)" data-bs-target="#confirmModal-mobile" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"> Logout</a>
+                    <a class="logout-btn menu-icon" href="javascript:void(0)" data-bs-target="#confirmModal-mobile" data-bs-toggle="modal"><img src="assets/images/icon/logout.png" alt="icon"></a>
                 </li>
             </ul>
 
@@ -160,17 +160,17 @@
         </div>
         <!-- Modal -->
         <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered my-width-1080">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 915px; width: 100%;">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body p-0">
                         <!-- Logout Success -->
-                        <div class="popup-wrapper logout-modal logout-modal-1080">
+                        <div class="popup-wrapper" style="padding: 86px 35px !important; border-radius: 20px;">
                             <div class="text-center">
-                                <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
-                                <h4 class="mb-4 mb-sm-5 mt-4 title-logout-1080">Are You Sure ?</h4>
+                                <img src="assets/images/icon/alert-2.svg" style="width: 179.5px" alt="thumb" class="mw-100">
+                                <h2 class="title-logout-1080" style="font-size: 55px; margin-top: 55px; margin-bottom: 163px;">Are You Sure ?</h2>
                             </div>
-                            <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
-                            <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                            <a href="javascript:void(0)" style="margin-bottom: 28px; font-weight: 500; font-size: 40px; height: 130px; line-height: 130px;" class="py-0 cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                            <a href="javascript:void(0)" style="font-weight: 500; font-size: 40px; height: 130px; line-height: 130px;" data-bs-dismiss="modal" class="py-0 cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
                         </div>
                         <!-- Logout Success -->
 
@@ -179,23 +179,23 @@
             </div>
         </div>
         <div class="modal fade" id="scan-access-card" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered my-width-1080">
+            <div class="modal-dialog modal-dialog-centered cmn--modal-width-1080">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body p-0">
                         <!-- Logout Success -->
-                        <div class="popup-wrapper logout-modal scan-access-card-1080">
-                            <div class="text-center">
-                                <h3 class="mb-4 mb-sm-5 mt-3 title-logout-1080">Please Scan Access Card for
+                        <div class="popup-wrapper scan-access-card-1080 mb-5" style="padding-inline: 37px; padding-top: 75px;">
+                            <div class="text-center mb-3">
+                                <h2 class="title-logout-1080" style="font-size: 55px; margin-bottom: 55px;">Scan Access Card for
                                     <br> Payment
-                                </h3>
+                                </h2>
                             </div>
-                            <div class="scan-btn-wrapper-1080 d-flex">
-                                <div class="left-1080 h--50-1080"><input type="text" class="form-control form--control"></div>
-                                <div class="right-1080">
-                                    <a href="" data-bs-target="#success-payment-1080" data-bs-toggle="modal" class="cmn--btn btn--lg d-block text-center">Proceed</a>
+                            <div class="scan-btn-wrapper-1080 d-flex mt-5">
+                                <div class="left-1080 h--50-1080 w-100"><input type="text" style="font-size: 40px; height: 130px;" class="form-control form--control"></div>
+                                <div class="right-1080" style="width: 311px;">
+                                    <a href="" data-bs-target="#success-payment-1080" data-bs-toggle="modal" class="cmn--btn btn--lg d-block text-center py-0" style=" height: 130px; line-height: 130px; font-size: 40px; font-weight: 500;">Proceed</a>
                                 </div>
                             </div>
-                            <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                            <a href="javascript:void(0)" style="height: 130px; line-height: 130px; font-weight: 500;font-size: 40px;" data-bs-dismiss="modal" class="cmn--btn d-block text-center mb-3 mt-3 py-0 active modal-cancel">Cancel</a>
                         </div>
                         <!-- Logout Success -->
 
@@ -205,16 +205,18 @@
         </div>
 
         <div class="modal fade" id="success-payment-1080" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 888px; width: 100%; height: 1044px;">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body p-0">
                         <!-- Share Success -->
-                        <div class="popup-wrapper success-modal success-payment-modal-108">
+                        <div class="popup-wrapper success-modal success-payment-modal-108" style="max-width: 888px; width: 100%; height: 1044px; padding-inline: 95px">
                             <div class="success-modal-mobile success-modal-mobile-1080 d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
-                                <img class="mt-0" src="assets/images/icon/success.png" alt="icon">
-                                <p class="text-center text--heading download-text">Payment Successful</p>
-                                <button type="button" class="btn cmn--btn d-block mt-4 w-100 mybtn-radius" data-bs-target="#success-payment-faild-1080" data-bs-toggle="modal">Logout</button>
-                                <button type="button" class="btn cmn--btn active d-block w-100 mb-1 mybtn-radius" data-bs-toggle="modal" data-bs-target="#scan-access-card">Back</button>
+                                <img class="mt-5" style="width: 236.49px;" src="assets/images/icon/success2.svg" alt="icon">
+                                <h2 class="text-center text--heading download-text" style=" margin-bottom: 80px; margin-top: 67px;font-size: 53px;">Payment Successful</h2>
+                                <button type="button" style="margin-bottom: 20px; height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn d-block mt-4 w-100 mybtn-radius" data-bs-target="#success-payment-faild-1080"
+                                    data-bs-toggle="modal">Logout</button>
+                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn active d-block w-100 mb-1 mybtn-radius" data-bs-toggle="modal"
+                                    data-bs-target="#scan-access-card">Back</button>
                             </div>
                         </div>
                         <!-- Share Success -->
@@ -223,15 +225,16 @@
             </div>
         </div>
         <div class="modal fade" id="success-payment-faild-1080" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 888px; width: 100%; height: 878px;">
                 <div class="modal-content bg-transparent border-0">
                     <div class="modal-body p-0">
                         <!-- Share Success -->
-                        <div class="popup-wrapper success-modal success-payment-modal-108">
+                        <div class="popup-wrapper success-modal success-payment-modal-108" style="max-width: 888px; width: 100%; height: 878px; padding-inline: 95px">
                             <div class="success-modal-mobile success-modal-mobile-1080 d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
-                                <img class="mt-0" style="width: 72px;" src="./assets/images/icon/alert.png" alt="icon">
-                                <p class="text-center text--heading download-text py-2" style="font-family: 'Poppins';font-weight: 600;">Payment Failed</p>
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#success-payment-1080" class="btn cmn--btn d-block w-100 mb-1 mybtn-radius">Back</button>
+                                <img class="mt-5" style="width: 236px;" src="./assets/images/icon/alert-2.svg" alt="icon">
+                                <h2 style="font-size: 53px; margin-bottom: 80px; margin-top: 67px;" class="text-center text--heading download-text py-2" style="font-family: 'Poppins';font-weight: 600;">Payment Failed</h2>
+                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" data-bs-toggle="modal" data-bs-target="#success-payment-1080"
+                                    class="btn cmn--btn d-block w-100 mb-1 mybtn-radius">Back</button>
                             </div>
                         </div>
                         <!-- Share Success -->
@@ -841,6 +844,26 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal-mobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <!-- Logout Success -->
+                    <div class="popup-wrapper logout-modal">
+                        <div class="text-center">
+                            <img src="assets/images/icon/alert.png" alt="thumb" class="mw-100">
+                            <h4 class="mb-4 mb-sm-5 mt-4">Are You Sure !</h4>
+                        </div>
+                        <a href="javascript:void(0)" class="cmn--btn btn--lg d-block text-center mt-3 mt-sm-4">Confirm</a>
+                        <a href="javascript:void(0)" data-bs-dismiss="modal" class="cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
+                    </div>
+                    <!-- Logout Success -->
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Logout Success -->
     <div class="modal fade" id="package-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
