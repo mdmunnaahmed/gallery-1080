@@ -5367,7 +5367,7 @@ h6 {
 		margin-bottom: 20px;
 	}
 	.search-wrapper-1080 {
-		width: 500px;
+		width: 570px;
 		background: #ffffff;
 		border: 1px solid #d5dde0;
 		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -5460,93 +5460,54 @@ h6 {
 	.datepicker-here-1080::placeholder {
 		color: #d9d9d9;
 	}
-	.timepicki {
-		width: 100%;
-	}
-	#timePicker,
-	#timePicker2 {
-		display: none;
-	}
-	.timepicki.time_pick input {
-		width: 100%;
-	}
 
-	.timepicki .timepicker_wrap {
+	.timepicker {
 		background-color: #e6f7fe;
-		display: flex;
-		position: unset;
-		left: 0 !important;
-		top: 0 !important;
 		border-radius: 20px;
-		box-shadow: none;
 		border: 1px solid transparent;
-		padding: 5px 0 !important;
+		padding: 10px;
+		width: 200px;
+		height: 170px;
+		font-family: "poppins";
 	}
-	.timepicki .timepicker_wrap input {
-		border: 0;
-		outline: 0;
+	.time-wrapper {
+		font-size: 40px;
+		letter-spacing: 0.1;
 	}
-
-	.timepicki .timepicker_wrap .prev,
-	.timepicki .timepicker_wrap .next {
-		padding: 17px;
-		border: 0;
-		padding: 10px 0;
-		background-color: transparent;
+	.time-wrapper span {
+		margin-inline: -5px;
 	}
-
-	.timepicki .timepicker_wrap .timepicki-input {
-		padding: 15px 0;
-		font-size: 20px;
-		font-weight: 700;
-		background-color: transparent;
-		line-height: 1;
-	}
-	.timepicki .ti_tx,
-	.timepicki .mi_tx,
-	.timepicki .mer_tx {
-		margin: 5px 0;
-	}
-
-	.timepicker_wrap .action-next,
-	.timepicker_wrap .action-prev {
+	.time-wrapper .clone {
 		position: relative;
 	}
-
-	.timepicker_wrap .action-next::before,
-	.timepicker_wrap .action-prev::before {
+	.time-wrapper .clone::before {
 		position: absolute;
-		content: "\f0d7";
+		content: "\f0d8";
 		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		font-size: 24px;
+		top: -35px;
 		color: #bcbcbc;
 		left: 50%;
 		transform: translateX(-50%);
 	}
-
-	.timepicker_wrap .action-next::before {
-		-webkit-transform: rotate(180deg) translateX(50%);
-		-ms-transform: rotate(180deg) translateX(50%);
-		transform: rotate(180deg) translateX(50%);
-		top: 0;
+	.time-wrapper .clone::after {
+		position: absolute;
+		content: "\f0d7";
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		font-size: 24px;
+		bottom: -35px;
+		color: #bcbcbc;
+		left: 50%;
+		transform: translateX(-50%);
 	}
-
-	.timepicker_wrap .action-prev::before {
-		bottom: 0;
-	}
-	.timepicki .time,
-	.timepicki .mins,
-	.timepicki .meridian {
-		width: 35px;
-		margin: 0 6px;
-	}
-	.meridian {
+	.meridian-wrapper {
 		background-color: #9bd3e8;
+		font-weight: 600;
+		font-size: 20px;
+		padding: 37px 15px;
 		border-radius: 20px;
-		width: 45px !important;
-		padding-inline: 10px;
-	}
-	.meridian input {
-		font-size: 15px !important;
 	}
 	.form--to {
 		font-family: "Gotham";
