@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/magnific-popup.css">
     <link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/datepicker.min.css">
-    <link rel="stylesheet" href="https://template.themebracket.com/admin/admin/assets/css/vendor/jquery-timepicky.css">
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -1036,31 +1035,6 @@
     <script src="assets/js/main.js"></script>
     <script src="https://template.themebracket.com/admin/admin/assets/js/vendor/datepicker.min.js"></script>
     <script src="https://template.themebracket.com/admin/admin/assets/js/vendor/datepicker.en.js"></script>
-    <script src="./assets/js/lib/timepicker.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $(".datepicker-here").datepicker();
-            $(".calendar-click").on("click", function () {
-                $(this).siblings("input").focus();
-            });
-            $("#timePicker").focus();
-            $("#timePicker2").focus();
-            $(".datepicker").on('click', function () {
-                $(".search-wrapper-1080").css('opacity', '1');
-                $(".search-wrapper-1080").css('visibility', 'visible');
-            })
-            $('.search-button-1080').on('click', function () {
-                location.reload(true);
-            })
-        })
-        // time picker init js code
-        $("#timePicker").timePicky();
-        $("#timePicker2").timePicky();
-        $("#timePicker").focus();
-        $("#timePicker2").focus();
-
-    </script>
 
 </body>
 
