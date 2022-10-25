@@ -5147,6 +5147,19 @@ h6 {
 		right: 32px !important;
 		bottom: 32px !important;
 	}
+	.input-gallery-wrapper-1080 .gallery-item,
+	.hidden-gallery-wrapper-1080 .gallery-item {
+		position: relative;
+	}
+	.input-gallery-wrapper-1080 label,
+	.hidden-gallery-wrapper-1080 .gallery-item label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
 	.input-gallery-wrapper-1080 input[type="checkbox"] {
 		width: 30px;
 		height: 30px;
@@ -5335,6 +5348,7 @@ h6 {
 		padding-top: 15px;
 		padding-bottom: 25px;
 		transform: translateY(0px);
+		font-size: 28px;
 	}
 	.gallery-select-options-1080.show {
 		visibility: visible;
@@ -5422,6 +5436,7 @@ h6 {
 		letter-spacing: 0.5px;
 		color: #845e5e;
 		background-color: white;
+		padding-right: 30px;
 	}
 	.select-location-1080:focus {
 		border-color: #173f78;
@@ -5562,5 +5577,30 @@ h6 {
 	}
 	img.payment-list-10801 {
 		width: 200px;
+	}
+	#galleryModal .modal-dialog {
+		width: 100%;
+		max-width: 90%;
+	}
+	.datepicker {
+		width: 380px;
+	}
+	.datepicker--cell {
+		height: 50px;
+		font-size: 20px;
+	}
+	.page-title {
+		font-size: 28px;
+	}
+	.datepicker--day-name {
+		font-size: 18px;
+	}
+	.form-select {
+		background-position: right 20px center;
+		background-size: 24px 16px;
+	}
+	.popup-wrapper input[type="checkbox"] {
+		width: 30px;
+		height: 30px;
 	}
 }

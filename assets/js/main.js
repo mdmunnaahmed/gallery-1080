@@ -236,3 +236,7 @@ $(".check-all").on("click", function () {
 $(".remove-item").on("click", function () {
 	$(this).closest(".uploaded-file-item").parent("li").remove();
 });
+
+$(".gallery-item label").on("click", function () {
+	$(this).siblings("input").click();
+});
