@@ -188,7 +188,8 @@
                                 <img src="assets/images/icon/alert-2.svg" style="width: 179.5px" alt="thumb" class="mw-100">
                                 <h2 class="title-logout-1080" style="font-size: 55px; margin-top: 55px; margin-bottom: 163px;">Are You Sure ?</h2>
                             </div>
-                            <a href="javascript:void(0)" style="margin-bottom: 28px; font-weight: 500; font-size: 40px; height: 130px; line-height: 130px;" class="py-0 cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 ">Confirm</a>
+                            <a href="javascript:void(0)" style="margin-bottom: 28px; font-weight: 500; font-size: 40px; height: 130px; line-height: 130px;" class="py-0 cmn--btn btn--lg d-block text-center mt-3 mt-sm-4 "
+                                data-bs-target="#scan-access-card" data-bs-toggle="modal">Confirm</a>
                             <a href="javascript:void(0)" style="font-weight: 500; font-size: 40px; height: 130px; line-height: 130px;" data-bs-dismiss="modal" class="py-0 cmn--btn d-block text-center mt-3 active modal-cancel">Cancel</a>
                         </div>
                         <!-- Logout Success -->
@@ -233,10 +234,8 @@
                             <div class="success-modal-mobile success-modal-mobile-1080 d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
                                 <img class="mt-5" style="width: 236.49px;" src="assets/images/icon/success2.svg" alt="icon">
                                 <h2 class="text-center text--heading download-text" style=" margin-bottom: 80px; margin-top: 67px;font-size: 53px;">Payment Successful</h2>
-                                <button type="button" style="margin-bottom: 20px; height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn d-block mt-4 w-100 mybtn-radius" data-bs-target="#success-payment-faild-1080"
-                                    data-bs-toggle="modal">Logout</button>
-                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn active d-block w-100 mb-1 mybtn-radius" data-bs-toggle="modal"
-                                    data-bs-target="#scan-access-card">Back</button>
+                                <button data-bs-dismiss="modal" type="button" style="margin-bottom: 20px; height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn d-block mt-4 w-100 mybtn-radius">Logout</button>
+                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn active d-block w-100 mb-1 mybtn-radius" data-bs-dismiss="modal">Back</button>
                             </div>
                         </div>
                         <!-- Share Success -->
@@ -253,8 +252,7 @@
                             <div class="success-modal-mobile success-modal-mobile-1080 d-flex flex-wrap align-items-center justify-content-center flex-column h-100">
                                 <img class="mt-5" style="width: 236px;" src="./assets/images/icon/alert-2.svg" alt="icon">
                                 <h2 style="font-size: 53px; margin-bottom: 80px; margin-top: 67px;" class="text-center text--heading download-text py-2" style="font-family: 'Poppins';font-weight: 600;">Payment Failed</h2>
-                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" data-bs-toggle="modal" data-bs-target="#success-payment-1080"
-                                    class="btn cmn--btn d-block w-100 mb-1 mybtn-radius">Back</button>
+                                <button type="button" style="height: 126px; line-height: 126px; padding: 0px; font-size: 43px;" class="btn cmn--btn d-block w-100 mb-1 mybtn-radius">Back</button>
                             </div>
                         </div>
                         <!-- Share Success -->
@@ -285,7 +283,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#shareModalTwo" data-bs-toggle="modal">Add to Cart</a>
+                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#confirmModal" data-bs-toggle="modal">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +305,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#shareModalTwo" data-bs-toggle="modal">Add to Cart</a>
+                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#confirmModal" data-bs-toggle="modal">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -329,7 +327,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#shareModalTwo" data-bs-toggle="modal">Add to Cart</a>
+                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#confirmModal" data-bs-toggle="modal">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +349,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#shareModalTwo" data-bs-toggle="modal">Add to Cart</a>
+                                    <a href="#0" class="cmn--btn cmn--btn2 btn--lg d-block text-center" data-bs-target="#confirmModal" data-bs-toggle="modal">Add to Cart</a>
                                 </div>
                             </div>
                         </div>
@@ -880,6 +878,7 @@
         </div>
     </div>
     <!-- Logout Success -->
+
     <div class="modal fade" id="package-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content bg-transparent border-0">
